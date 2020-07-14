@@ -1,14 +1,17 @@
 //Ordene o array numbers em ordem crescente e imprima seus valores;
 //Ordene o array numbers em ordem decrescente e imprima seus valores;
 
-for (let i = 1; i < array.length; i++) {
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let i = 1; i < numbers.length; i++) {
     for (let j = 0; j < i; j++) {
-      if (array[i] < array[j]) {
-        let position = array[i];
+      if (numbers[i] < numbers[j]) {
+        let position = numbers[i];
     
-        array[i] = array[j];
-        array[j] = position;
+        numbers[i] = numbers[j];
+        numbers[j] = position;
       }
     }
   }
-  
+
+  console.log(numbers);
