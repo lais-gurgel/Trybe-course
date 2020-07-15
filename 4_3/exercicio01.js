@@ -5,5 +5,11 @@
 //Criacao de loop para imprimir linha de * n vezes
 
 let n = 5;
+let linhaAsteriscos = "";
+let asterisco = "*"
 
+for (let i=0; i < n; i += 1) {
+    linhaAsteriscos = linhaAsteriscos+ asterisco
+}
 
+console.log(linhaAsteriscos)
