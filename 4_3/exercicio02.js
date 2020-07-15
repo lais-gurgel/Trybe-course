@@ -10,5 +10,5 @@ let asterisco = "*";
 
 for (let i=0; i < n; i += 1) {
     linhaAsteriscos = linhaAsteriscos + asterisco;
-
+    console.log(linhaAsteriscos)
 }
