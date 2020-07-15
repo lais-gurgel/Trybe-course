@@ -6,12 +6,12 @@
 
 let n = 5;
 let linhaAsteriscos = "";
-let asterisco = "*"
+let asterisco = "*";
 
 for (let i=0; i < n; i += 1) {
     linhaAsteriscos = linhaAsteriscos + asterisco;
 }
 
 for (let i=0; i < n; i += 1) {
-    console.log(linhaAsteriscos)
+    console.log(linhaAsteriscos);
 }
