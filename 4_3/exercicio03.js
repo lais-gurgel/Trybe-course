@@ -10,6 +10,15 @@ let asterisco = '*';
 let posicaoColunaInicial = n;
 
 for (let i = 0; i <= n; i++) {
+    for (let colunaAtual = 0; colunaAtual < n; colunaAtual++) {
+        if (colunaAtual < posicaoColunaInicial) {
+            linha += "";
+        } else {
+            linha += asterisco;
+        }
+    }
 
     console.log(linha);
+    linha = "";
+    posicaoColunaInicial = posicaoColunaInicial - 1;
 }
