@@ -9,5 +9,5 @@ for (let i = 0; i < fruits.length; i+= 1) {
 }
 
 if (sum > 15) {
-
+    console.log(sum)
 }
