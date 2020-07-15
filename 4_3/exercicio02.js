@@ -1,0 +1,1 @@
+// Faça um programa que, dado um valor n qualquer, seja n > 1, imprima na tela um triangulo feito de asteriscos de base e lateral esquerda de tamanho n.
