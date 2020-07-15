@@ -3,3 +3,4 @@
 // Utilizando o método 'baby steps', faça commit a cada tarefa executada
 
 let fruits = [3, 4, 10, 1, 12];
+let sum = 0;
