@@ -9,7 +9,9 @@ let linhaAsteriscos = "";
 let asterisco = "*"
 
 for (let i=0; i < n; i += 1) {
-    linhaAsteriscos = linhaAsteriscos+ asterisco
+    linhaAsteriscos = linhaAsteriscos + asterisco;
 }
 
-console.log(linhaAsteriscos)
+for (let i=0; i < n; i += 1) {
+    console.log(linhaAsteriscos)
+}
