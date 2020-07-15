@@ -12,7 +12,7 @@ let posicaoColunaInicial = n;
 for (let i = 0; i <= n; i++) {
     for (let colunaAtual = 0; colunaAtual < n; colunaAtual++) {
         if (colunaAtual < posicaoColunaInicial) {
-            linha += "";
+            linha += " ";
         } else {
             linha += asterisco;
         }
