@@ -8,3 +8,8 @@ let n = 5;
 let linha = '';
 let asterisco = '*';
 let posicaoColunaInicial = n;
+
+for (let i = 0; i <= n; i++) {
+
+    console.log(linha);
+}
