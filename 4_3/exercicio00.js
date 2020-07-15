@@ -7,3 +7,7 @@ let sum = 0;
 for (let i = 0; i < fruits.length; i+= 1) {
     sum += fruits[i];
 }
+
+if (sum > 15) {
+
+}
