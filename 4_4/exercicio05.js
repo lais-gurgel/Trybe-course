@@ -1,4 +1,8 @@
-// Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics #178", "O último MacPatinhas", "Sim".
+// Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics #178", "O último MacPatinhas", "Sim". A resposta final deve ser:
+//Margarida e Tio Patinhas
+//Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
+//Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
+//Ambos recorrentes
 
 let info = {
     personagem: "Margarida",
@@ -19,5 +23,5 @@ console.log(info.origem + " e " + info2.origem);
 console.log(info.nota + " e " + info2.nota);
 
 if (info.recorrente === info2.recorrente) {
-    console.log("Ambos recorrentes")
+    console.log("Ambos recorrentes");
 }
