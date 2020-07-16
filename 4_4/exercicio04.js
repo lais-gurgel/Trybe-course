@@ -8,5 +8,5 @@ let info = {
   };
 
 for (let i in info ) {
-    console.log(info[i])
+    console.log(info[i]);
 }
