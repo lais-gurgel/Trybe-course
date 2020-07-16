@@ -15,8 +15,8 @@ for (let index = base; index >= 1; index -= 2) {
     numberOfLines += 1;
 }
 
-for (lineIndex = 0; ; lineIndex += 1) {
-    for (columnIndex = X; regra; columnIndex += 1) {
+for (lineIndex = 0; lineIndex < numberOfLines ; lineIndex += 1) {
+    for (columnIndex = 1; columnIndex <= base; columnIndex += 1) {
 
     }
 }
