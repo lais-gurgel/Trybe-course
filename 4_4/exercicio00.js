@@ -30,8 +30,8 @@ var curso = {
     arquivado: false
   };
 
-console.log("O nome do curso é: ")
-console.log("A descrição do módulo Internet é: ")
-console.log("A última semana do módulo *HTML* é: ")
-console.log("O tipo do módulo Shell é :")
+console.log("O nome do curso é: " + curso.nome)
+console.log("A descrição do módulo Internet é: " + curso.modulos.internet.descricao)
+console.log("A última semana do módulo *HTML* é: " + curso.modulos.html.semana[1])
+console.log("O tipo do módulo Shell é: " + curso.modulos.shell.tipo)
   
