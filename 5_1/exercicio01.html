@@ -7,29 +7,41 @@
 </head>
 <body>
 
-    <div class="cat">miau</div>
-    <div class="cat">miau2</div>
-    <div class="dog">auau</div>
+    <div id="cat">miau</div>
+    <div id="cat">miau2</div>
+    <div id="dog">auau</div>
+
+    <div class="animals">tiger</div>
+    <div class="animals">lion</div>
+
+    <button>Aperte aqui</button>
 
     <script>
-        //Acessar o ID e imprimir no console
+        //Acessar ID e imprimir no console
         console.log(
         document.getElementById("cat")
         )
         //retorno console <div class="cat">miau</div>
-
         //Acessar texto dentro da div e imprimir no console
         console.log(
-        document.getElementById("dog").innerHTML
+            document.getElementById("dog").innerHTML
         )
         //retorno console 'auau'
 
-        //Acessar class cat 1, de conteúdo miau2
+        //Acessar CLASS animals, de conteúdo 'lion'
         console.log (
-            document.getElementsByClassName("cat")[1]
+            document.getElementsByClassName("animals")[1].innerHTML
         )
-        //retorno console <div class="cat">miau2</div>
+        //retorno console 'lion'
 
+        //Acessar TAG button
+        document.getElementsByTagName("button")
+        //retorno HTMLCollection [button]
+        document.getElementsByTagName("button")[0]
+        //retorno <button>Aperte aqui</button>
+        document.getElementsByTagName("button")[0].innerHTML
+        //retorno "Aperte aqui"
+        
     </script>
     
 </body>
