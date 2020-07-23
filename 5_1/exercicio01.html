@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="cat">miau</div>
+    <div class="cat">miau2</div>
+    <div class="dog">auau</div>
+
+    <script>
+        //Acessar o ID e imprimir no console
+        console.log(
+        document.getElementById("cat")
+        )
+        //retorno console <div class="cat">miau</div>
+
+        //Acessar texto dentro da div e imprimir no console
+        console.log(
+        document.getElementById("dog").innerHTML
+        )
+        //retorno console 'auau'
+
+        //Acessar class cat 1, de conteúdo miau2
+        console.log (
+            document.getElementsByClassName("cat")[1]
+        )
+        //retorno console <div class="cat">miau2</div>
+
+    </script>
+    
+</body>
+</html>
