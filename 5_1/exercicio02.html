@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p class="paragraph" style="color:blue">Primeiro parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p class="paragraph" style="color:red">Segundo parágrafo!</p>
+
+    <script>
+      //Adicione ao seu HTML uma classe com alguns estilos para os seus dois parágrafos.
+      
+      //Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName.
+      let paragraph = document.getElementsByClassName("paragraph");
+      console.log(paragraph);
+
+      //Altere algum estilo do primeiro deles.
+      let firstParagraph = document.getElementsByClassName("paragraph")[0];
+      firstParagraph.style.color = "red";
+      console.log(firstParagraph);
+
+      //Recupere o subtítulo pela tag.
+      let element = document.getElementsByTagName("h4")[0].innerHTML
+      console.log(element);
+
+    </script>
+
+  </body>
+</html>
