@@ -12,15 +12,18 @@
       //Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName.
       let paragraph = document.getElementsByClassName("paragraph");
       console.log(paragraph);
+      //Retorno HTMLCollection(2) 0: p.paragraph - 1: p.paragraph
 
       //Altere algum estilo do primeiro deles.
       let firstParagraph = document.getElementsByClassName("paragraph")[0];
       firstParagraph.style.color = "red";
       console.log(firstParagraph);
+      //Retorno <p class="paragraph" style="color:red">Primeiro parágrafo!</p>
 
       //Recupere o subtítulo pela tag.
       let element = document.getElementsByTagName("h4")[0].innerHTML
       console.log(element);
+      //Retorno "Subtítulo"
 
     </script>
 
