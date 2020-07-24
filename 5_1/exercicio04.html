@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="teste">1</div>
+    <div class="teste">2</div>
+    <div class="teste">3</div>
+
+    <div id="pai">
+        <div class="filho">1</div>
+        <div class="filho">2</div>
+        <div class="filho">3</div>
+    </div>
+
+    <div id="paizao">
+        <div class="filho">4</div>
+        <div class="filho">5</div>
+        <div class="filho">6</div>
+    </div>
+
+    <p>oi</p>
+    <p>olá</p>
+
+    <script>
+        //querySelectorAll
+        //Acessando a CLASSE
+        let classQuery = document.querySelectorAll(".teste")
+        console.log(classQuery)
+        //retorno NodeList(3) [div.teste, div.teste, div.teste]
+
+
+        //Acessando a CLASS 'filho' do ID 'paizao', ignorando as do id 'paizao'
+        let classIdQuery = document.getElementById("paizao").querySelectorAll(".filho")[0].innerHTML
+        console.log(classIdQuery)
+        //retorno '4'
+
+        //Utilização = verificando se há a classe 'filho' dentro da div identificada pelo id 'pai'
+        if (document.getElementById("pai").querySelectorAll(".filho"))
+        console.log("Classe 'filho' pertence a div com id 'pai'");
+        //retorno "Classe 'filho' pertence a div com id 'pai'"
+
+        //Utilização = agora verifique se o tamanho da class 'filho' é igual a 3
+        if (document.getElementById("pai").querySelectorAll(".filho").length === 3)
+        console.log("A class 'filho' possui tamanho 3 (elementos)");
+        //retorno "A class 'filho' possui tamanho 3 (elementos)"
+
+    </script>
+    
+</body>
+</html>
