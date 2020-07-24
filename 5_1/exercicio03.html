@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="teste1">1</div>
+    <div class="teste2">2</div>
+    <div class="teste2">22</div>
+    <p class="teste3">teste 3</p>
+
+    <script>
+        //UTILIZANDO querySelector 
+        //Acessando ID
+        document.querySelector("#teste1");
+        //retorno <div id="teste1">1</div>
+
+        //Acessando classe
+        document.querySelector(".teste2");
+        //retorno <div class="teste2">2</div>
+
+        //Acessando tag
+        document.querySelector("p");
+        document.querySelector("p.teste3");
+        //retorno <p class="teste3">teste 3</p>
+
+        //Acessando classe
+        document.querySelector(".teste2");
+        //retorno <div class="teste2">2</div>
+        //O querySelector retorna APENAS o PRIMEIRO ELEMENTO, no caso, ignorando o <div class="teste2">22</div>
+
+    </script>
+
+</body>
+</html>
