@@ -78,17 +78,19 @@ columnLeft.style.backgroundColor = "purple";
 let columnRight = document.querySelector(".column_right");
 columnRight.style.backgroundColor = "green";
 
-let squaresLeft = document.querySelector("#stack>.column_left>div");
-squaresLeft.style.backgroundColor = "violet";
+let squaresLeft = document.querySelectorAll("#stack>.column_left>div");
+squaresLeft[0].style.backgroundColor = "violet";
+squaresLeft[1].style.backgroundColor = "violet";
 
-let squaresLeftInside = document.querySelector("#stack>.column_left>div>div");
-squaresLeftInside.style.backgroundColor = "pink";
+let squaresRight = document.querySelectorAll(".column_right>div");
+squaresRight[0].style.backgroundColor = "purple";
+squaresRight[1].style.backgroundColor = "purple";
 
-let squaresRight = document.querySelector(".column_right>div");
-squaresRight.style.backgroundColor = "purple";
-
-let squaresRightInside = document.querySelector(".column_right>div>div");
-squaresRightInside.style.backgroundColor = "pink";
+let squaresRightInside = document.querySelectorAll("div>div>div>div");
+squaresRightInside[0].style.backgroundColor = "pink";
+squaresRightInside[1].style.backgroundColor = "orange";
+squaresRightInside[2].style.backgroundColor = "pink";
+squaresRightInside[3].style.backgroundColor = "orange";
 
 </script>
 
