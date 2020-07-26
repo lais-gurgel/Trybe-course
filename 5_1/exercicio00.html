@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - getElementById</title>
+</head>
+<body>
+  
+  <h2 id="page-title">Título</h2>
+  <p id="paragraph">Dê uma cor para este parágrafo!</p>
+  <h4 id="subtitle">Subtítulo</h4>
+  <p id="second-paragraph">Segundo parágrafo!</p>
+
+  <script>
+    // Altere a cor e texto desse parágrafo
+    var paragraph = document.getElementById("paragraph");
+    paragraph.style.color = "red";
+    paragraph.textContent = "Genre‎: ‎Fantasy‎; ‎Adventure";
+
+    // Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu filme favorito.
+    var pageTitle = document.getElementById("page-title");
+    pageTitle.textContent = "The Lord of The Rings";
+
+    //Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.
+    var secondParagraph = document.getElementById("second-paragraph");
+    secondParagraph.textContent = "The Lord of the Rings is an epic high-fantasy novel written by English author and scholar J. R. R. Tolkien.";
+    secondParagraph.style.color = "blue";
+
+    //Por fim, recupere o subtítulo e altere-o também.
+    var subtitle = document.getElementById("subtitle");
+    subtitle.textContent = "Author‎: ‎J. R. R. Tolkien";
+
+  </script>
+  
+</body>
+</html>

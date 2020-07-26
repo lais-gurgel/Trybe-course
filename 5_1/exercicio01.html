@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="cat">miau</div>
+    <div id="cat">miau2</div>
+    <div id="dog">auau</div>
+
+    <div class="animals">tiger</div>
+    <div class="animals">lion</div>
+
+    <button>Aperte aqui</button>
+
+    <script>
+        //Acessar ID e imprimir no console
+        console.log(
+        document.getElementById("cat")
+        )
+        //retorno console <div class="cat">miau</div>
+        //Acessar texto dentro da div e imprimir no console
+        console.log(
+            document.getElementById("dog").innerHTML
+        )
+        //retorno console 'auau'
+
+        //Acessar CLASS animals, de conteúdo 'lion'
+        console.log (
+            document.getElementsByClassName("animals")[1].innerHTML
+        )
+        //retorno console 'lion'
+
+        //Acessar TAG button
+        document.getElementsByTagName("button")
+        //retorno HTMLCollection [button]
+        document.getElementsByTagName("button")[0]
+        //retorno <button>Aperte aqui</button>
+        document.getElementsByTagName("button")[0].innerHTML
+        //retorno "Aperte aqui"
+        
+    </script>
+    
+</body>
+</html>
