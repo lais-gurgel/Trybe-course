@@ -1,7 +1,7 @@
 ## AGENDA DO CURSO 
 ### BLOCO - DIA - TITULO
 
-1 - 1 Introdução - Desenvolvimento Web 
+1 - 1 Introdução - Desenvolvimento Web
 1 - 2 Introdução - Unix & Shell 
 1 - 2 Setup 
 1 - 3 Unix & Bash - Parte 1 
