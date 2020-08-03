@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- EXERCISE 00 - HTML & CSS FORMS -->
+  
+  <form action="/action_page.php">
+    <!-- HTML Input Types-->
+    <!-- Add an input field for text, with the name "username" -->
+    <input type="text" name="username">
+    <!-- Add a submit button with the value "Submit Form"-->
+    <input type="submit" value="Submit Form">
+    <!-- Add two radio buttons with the name "color"-->
+    Favorite color:
+    Blue
+    <input value="blue" type="radio" name="color">
+    Red
+    <input value="red" type="radio" name="color">
+    <input type="submit">
+    <!-- Add a <button> element with the text "Click Me"-->
+    <button>Click Me</button>
+    <!-- Add a input field that can only contain numbers, use the correct input attributes to only allow numbers between 1 and 5-->
+    <input type="number" min="1" max="5">
+    
+    <!-- HTML Form Attributes-->
+    <!-- add placeholder that says "Your name here"-->
+    <input type="text" placeholder="Your name here">
+    <!-- Disable the input field below-->
+    <input type="text" disabled>
+    <!-- Set the max numbers of characters allowed in the input field to 40-->
+    <input type="text" maxlength="40">
+    <!-- Set the input field to be read only (meaning that the value cannot be changed)-->
+    <input type="text" readonly>
+  </form>
+  
+</body>
+</html>
