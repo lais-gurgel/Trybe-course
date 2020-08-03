@@ -7,50 +7,45 @@
   <link href="bulma-0.9.0/css/bulma.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <!-- Crie um <fieldset> para os seguintes dados pessoais-->
-  <fieldset>
-    <!-- Nome-texto; limite de 40 caracteres; campo obrigatório-->
-    <input type="text" placeholder="Nome completo" maxlength="40" required="required">
-    <!-- Email-texto; limite de 50 caracteres; campo obrigatório-->
+  
+  <div class="field">
+    
+    <label class="label">Nome Completo</label>
+    <div class="control">
+      <input class="input" type="text" placeholder="Nome completo" maxlength="40" required="required">
+    </div>    
+    
     <input type="text" placeholder="E-mail" maxlength="50" required="required">
-    <!-- CPF-texto; limite 11 caracteres; campo obrigatório-->
+    
     <input type="text" placeholder="CPF" maxlength="11" required="required">
     <br>
-    <!-- Endereço-texto; limite de 200 caracteres; campo obrigatório-->
+    
     <input type="text" placeholder="Endereço" maxlength="200" required="required">
-    <!-- Cidade-texto; limite de 28 caracteres; campo obrigatório-->
+    
     <input type="text" placeholder="Cidade" maxlength="28" required="required">
-    <!-- Estado-ComboBox; todos os estados do Brasil; utilize estruturas de repetição via JavaScript para gerar os <option>; campo obrigatório-->
+    
     <select id="estado">
     </select>
     <br>
-    <!-- Tipo-Radio Button; Casa, Apartamento; campo obrigatório-->
+   
     <input type="radio" id="casa" name="tipo" value="casa" required="required">
     <label for="casa">Casa</label>
     <input type="radio" id="apartamento" name="tipo" value="apartamento" required="required">
     <label for="apartamento">Apartamento</label>
-  </fieldset>
+  </div>
 
-  <!-- Crie outro <fieldset> para dados do ultimo emprego-->
   <fieldset>
-    <!-- Resumo do curriculo-TextArea; limite de 100 caracteres; campo obrigatório-->
+    
     <textarea maxlength="1000" required="required"></textarea>
-    <!-- Cargo-texto; limite de 40 caracteres; campo obrigatório-->
+    
     <input type="text" placeholder="Cargo" maxlength="40" required="required">
-    <!-- Descrição do cargo-texto; limite de 500 caracteres; campo obrigatório-->
+    
     <input type="text" placeholder="Descrição do cargo" maxlength="500" required="required">
-    <!-- Data de inicio-texto; 
-    - verificar formato dd/mm/aaaa; 
-    - o dia deve ser entre 1 e 31, e o mês entre 1 e 12, e o ano não pode ser negativo;
-    - caso haja alguma coisa diferente, deve exibir mensagem de erro contextualizada;
-    - campo obrigatório -->
+    
     <input type="text" placeholder="Data de inicio" maxlength="10" required="required">
-    <!-- Logo abaixo do formulário, crie um botão que: 
-    - Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault(); 
-    - Execute as validações que foram pedidas ao longo da montagem do formulário.
-    - Monte uma <div> com o consolidado dos dados que foram inseridos no formulário. -->
+  
     <button id="enviar" name="enviar" value="1" type="submit">Enviar</button>
-    <!-- Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.-->
+
     <button id="limpar" name="limpar" value="1" type="submit">Limpar</button>
   </fieldset>
 
