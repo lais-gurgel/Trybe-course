@@ -53,7 +53,7 @@
   <div class="field">
     <label class="label">Cidade</label>
     <div class="control">
-    <input class="input" type="text" placeholder="Cidade" maxlength="28" required="required">
+    <input class="input" type="text" placeholder="Digite sua cidade" maxlength="28" required="required">
     </div>
   </div>
 
@@ -76,24 +76,36 @@
   <div class="field">
     <label class="label">Cargo</label>
     <div class="control">
-      <input type="text" placeholder="Cargo" maxlength="40" required="required">
+      <input class="input" type="text" placeholder="Máximo 40 caracteres" maxlength="40" required="required">
     </div>
   </div>
   
   <div class="field">
     <label class="label">Descrição do Cargo</label>
     <div class="control">
-      <input type="text" placeholder="Descrição do cargo" maxlength="500" required="required">
+      <input class="input" type="text" placeholder="Máximo 500 caracteres" maxlength="500" required="required">
     </div>
   </div>
 
-    <input type="text" placeholder="Descrição do cargo" maxlength="500" required="required">
-    
-    <input type="text" placeholder="Data de inicio" maxlength="10" required="required">
+  <div class="field">
+    <label class="label">Data de Inicio</label>
+    <div class="control">
+      <input class="input" type="text" placeholder="DD/MM/AAAA" maxlength="10" required="required">
+    </div>
+  </div>
   
-    <button id="enviar" name="enviar" value="1" type="submit">Enviar</button>
-
-    <button id="limpar" name="limpar" value="1" type="submit">Limpar</button>
+  <div class="field is-grouped is-grouped-right">
+    <p class="control">
+      <button id="enviar" class="button is-primary" name="enviar" value="1" type="submit">
+        Enviar
+      </button>
+    </p>
+    <p class="control">
+      <button id="limpar" class="button is-light" name="limpar" value="1" type="submit">
+        Limpar
+      </button>
+    </p>
+  </div>
 
   <footer id="footer">
     <p>Developed by Lais Gurgel - 2020</p>
