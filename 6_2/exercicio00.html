@@ -3,54 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae</title>
+  <title>Curriculo Form</title>
   <link href="bulma-0.9.0/css/bulma.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   
   <div class="field">
-    
     <label class="label">Nome Completo</label>
     <div class="control">
-      <input class="input" type="text" placeholder="Nome completo" maxlength="40" required="required">
+      <input class="input" type="text" placeholder="Digite seu nome" maxlength="40" required="required">
     </div>    
-    
+  </div>
+
+  <div class="field">
     <label class="label">E-mail</label>
     <div class="control">
-      <input class="input" type="text" placeholder="E-mail" maxlength="50" required="required">
+      <input class="input" type="text" placeholder="seuemail@email.com" maxlength="50" required="required">
     </div>
-
+  </div>
+  
+  <div class="field">
     <label class="label">CPF</label>
     <div class="control">
-      <input class="input" type="text" placeholder="CPF" maxlength="11" required="required">
+      <input class="input" type="text" placeholder="000.000.000-00" maxlength="11" required="required">
     </div>
-    
+  </div>
+
+  <div class="field">
     <label class="label">Endereço</label>
     <div class="control">
-      <input class="input" type="text" placeholder="Endereço" maxlength="200" required="required">
+      <input class="input" type="text" placeholder="Rua Sem Nome, número 000" maxlength="200" required="required">
     </div>
+  </div>
+    
 
+  <div class="field">
+    <div class="control">
+      <label class="radio">
+        <input type="radio" id="casa" name="tipo" value="casa" required="required">
+        Casa
+      </label>
+      <label class="radio">
+        <input type="radio" id="apartamento" name="tipo" value="apartamento" required="required">
+        Apartamento
+      </label>
+    </div>
+  </div>
+    
+  <div class="field">
     <label class="label">Cidade</label>
     <div class="control">
     <input class="input" type="text" placeholder="Cidade" maxlength="28" required="required">
     </div>
-
-    <select id="estado">
-    </select>
-    <br>
-   
-    <input type="radio" id="casa" name="tipo" value="casa" required="required">
-    <label for="casa">Casa</label>
-    <input type="radio" id="apartamento" name="tipo" value="apartamento" required="required">
-    <label for="apartamento">Apartamento</label>
   </div>
 
-  <fieldset>
-    
-    <textarea maxlength="1000" required="required"></textarea>
-    
-    <input type="text" placeholder="Cargo" maxlength="40" required="required">
-    
+  <div class="field">
+    <label class="label">Estado</label>
+    <div class="control">
+      <div class="select">
+        <select id="estado"></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Resumo do Curriculo</label>
+    <div class="control">
+      <textarea class="textarea" maxlength="1000" required="required"></textarea>
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label">Cargo</label>
+    <div class="control">
+      <input type="text" placeholder="Cargo" maxlength="40" required="required">
+    </div>
+  </div>
+  
+  <div class="field">
+    <label class="label">Descrição do Cargo</label>
+    <div class="control">
+      <input type="text" placeholder="Descrição do cargo" maxlength="500" required="required">
+    </div>
+  </div>
+
     <input type="text" placeholder="Descrição do cargo" maxlength="500" required="required">
     
     <input type="text" placeholder="Data de inicio" maxlength="10" required="required">
@@ -58,13 +94,12 @@
     <button id="enviar" name="enviar" value="1" type="submit">Enviar</button>
 
     <button id="limpar" name="limpar" value="1" type="submit">Limpar</button>
-  </fieldset>
 
   <footer id="footer">
     <p>Developed by Lais Gurgel - 2020</p>
   </footer>
 
-  <script src="exercicio02.js"></script>
+  <script src="exercicio00.js"></script>
 
 </body>
 </html>
