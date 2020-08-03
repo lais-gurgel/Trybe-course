@@ -1,5 +1,4 @@
 // Utilize estruturas de repetição via JavaScript para gerar os <option>
-
 const state = document.querySelector('#estado');
 const states = ['Selecione seu estado', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
 let value = 1;
@@ -23,3 +22,11 @@ document.getElementById("enviar").addEventListener("click", function(event){
 });
 
 // Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também
+
+const informations = ['nome', 'email', 'cpf', 'endereço', 'cidade', 'curriculo', 'cargo', 'descricaoCargo', 'data'];
+const clearButton = document.getElementById('limpar');
+
+function clearInformations () {
+  
+}
+clearButton.addEventListener('click', clearButton)
