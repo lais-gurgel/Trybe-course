@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculo Form</title>
   <link href="css/bulma-0.9.0/css/bulma.min.css" rel="stylesheet" type="text/css" />
-  <link href="exercicio00.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link href="css/exercicio00.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/pikaday.css">
 </head>
 <body>
   <h1 class="title is-1 has-text-centered">Cadastro de Currículo</h1>
@@ -93,7 +93,7 @@
   <div class="field">
     <label class="label">Data de Início</label>
     <div class="control">
-      <input class="input" type="text" placeholder="DD/MM/AAAA" maxlength="10" required="required">
+      <input class="input" id="datepicker" type="text" placeholder="DD/MM/AAAA" maxlength="10" required="required">
     </div>
   </div>
   
@@ -118,7 +118,7 @@
     </div>
   </footer>
 
-  <script src="exercicio00.js"></script>
   <script src="js/pikaday.js"></script>
+  <script src="js/exercicio00.js"></script>
 </body>
 </html>
