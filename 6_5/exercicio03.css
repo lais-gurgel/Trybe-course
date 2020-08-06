@@ -25,4 +25,9 @@ figure {
     font-size: 1.5em;
     margin: 20px;
   }
+
+  .figure-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
