@@ -36,5 +36,6 @@ figure {
   body {
     background: lightskyblue;
     font-size: 1.7em;
+    margin: 50px;
   }
 }
