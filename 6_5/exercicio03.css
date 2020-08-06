@@ -23,6 +23,6 @@ figure {
   body {
     background: yellow;
     font-size: 1.5em;
+    margin: 20px;
   }
-
 }
