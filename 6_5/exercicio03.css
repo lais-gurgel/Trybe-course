@@ -22,6 +22,7 @@ figure {
 @media only screen and (min-width: 800px) {
   body {
     background: yellow;
+    font-size: 1.5em;
   }
 
 }
