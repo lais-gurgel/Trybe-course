@@ -4,3 +4,19 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+/* SMARTPHONE LAYOUT - DESENVOLVIMENTO MOBILE FIRST*/
+
+body {
+
+}
+
+/* TABLET LAYOUT */
+@media only screen and (min-width: 480px) {
+  
+}
+
+/* DESKTOP LAYOUT */
+@media only screen and (min-width: 1024px) {
+  
+}
