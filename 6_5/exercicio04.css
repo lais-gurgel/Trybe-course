@@ -12,6 +12,11 @@ body {
   margin: 15px;
 }
 
+h1 {
+  text-align: center;
+  color: white;
+}
+
 /* TABLET LAYOUT */
 @media only screen and (min-width: 480px) {
   
