@@ -38,9 +38,9 @@ window.onload = function () {
       city: {
         required: true,
       },
-      //state: {
-      //  required: true,
-      //},
+      state: {
+        required: true,
+      },
       //complement: {
       // required: true,
       //},
@@ -74,9 +74,9 @@ window.onload = function () {
       city: {
         required: 'O campo é obrigatório',
       },
-      //state: {
-      //  required: 'O campo é obrigatório',
-      //},
+      state: {
+        required: 'O campo é obrigatório',
+      },
       //complement: {
       //  required: 'O campo é obrigatório',
       //},
@@ -111,9 +111,9 @@ function createAttributes () {
 createAttributes();
 
 // Utilize estruturas de repetição via JavaScript para gerar os <option>
-const state = document.querySelector('#estado');
+const state = document.querySelector('#state');
 const states = ['', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
-let value = 1;
+let value = '';
 
 function createListStates() {
     for (let index = 0; index < states.length; index += 1) {
