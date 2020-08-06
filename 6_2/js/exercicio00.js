@@ -19,11 +19,100 @@ window.onload = function () {
         return new Date(day, month, year);
     }
   });
+
+  new window.JustValidate('.curriculum-form', {
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      cpf: {
+        required: true,
+      },
+      address: {
+        required: true,
+      },
+      city: {
+        required: true,
+      },
+      //state: {
+      //  required: true,
+      //},
+      //complement: {
+      // required: true,
+      //},
+      resume: {
+        required: true,
+      },
+      role: {
+        required: true,
+      },
+      roleDescription: {
+        required: true,
+      },
+      datepicker: {
+        required: true,
+      },
+    },
+    messages: {
+      email: {
+        required: 'O campo é obrigatório',
+        email: 'O email digitado não é válido'
+      },
+      name: {
+        required: 'O campo é obrigatório',
+      },
+      cpf: {
+        required: 'O campo é obrigatório',
+      },
+      address: {
+        required: 'O campo é obrigatório',
+      },
+      city: {
+        required: 'O campo é obrigatório',
+      },
+      //state: {
+      //  required: 'O campo é obrigatório',
+      //},
+      //complement: {
+      //  required: 'O campo é obrigatório',
+      //},
+      resume: {
+        required: 'O campo é obrigatório',
+      },
+      role: {
+        required: 'O campo é obrigatório',
+      },
+      roleDescription: {
+        required: 'O campo é obrigatório',
+      },
+      datepicker: {
+        required: 'O campo é obrigatório',
+      },
+    },
+
+    submitHandler: function (form, values) {
+      console.log(form, values);
+    },
+  });  
 }
+
+const elementsID = ['name', 'email', 'cpf', 'address', 'city', 'state', 'complement', 'resume', 'role', 'roleDescription', 'datepicker']
+function createAttributes () {
+  for (let i = 0; i < elementsID.length; i += 1) {
+  let element = document.getElementById(elementsID[i])
+    element.setAttribute('name', elementsID[i]);
+    element.setAttribute('data-validate-field', elementsID[i]);
+  }
+}
+createAttributes();
 
 // Utilize estruturas de repetição via JavaScript para gerar os <option>
 const state = document.querySelector('#estado');
-const states = ['Selecione seu estado', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
+const states = ['', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
 let value = 1;
 
 function createListStates() {
@@ -37,19 +126,12 @@ function createListStates() {
 }
 createListStates();
 
-// Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault(); 
-// - Execute as validações que foram pedidas ao longo da montagem do formulário.
-// - Monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
-document.getElementById("enviar").addEventListener("click", function(event){
-  event.preventDefault()
-});
-
 // Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também
 
-const informations = ['nome', 'email', 'cpf', 'endereço', 'cidade', 'curriculo', 'cargo', 'descricaoCargo', 'data'];
-const clearButton = document.getElementById('limpar');
+// const informations = ['nome', 'email', 'cpf', 'endereço', 'cidade', 'curriculo', 'cargo', 'descricaoCargo', 'data'];
+// const clearButton = document.getElementById('limpar');
 
-function clearInformations () {
-  
-}
-clearButton.addEventListener('click', clearButton)
+// function clearInformations () {
+//   
+//}
+//clearButton.addEventListener('click', clearButton)
