@@ -41,9 +41,9 @@ window.onload = function () {
       state: {
         required: true,
       },
-      //complement: {
-      // required: true,
-      //},
+      radio: {
+        required: true,
+      },
       resume: {
         required: true,
       },
@@ -56,6 +56,7 @@ window.onload = function () {
       datepicker: {
         required: true,
       },
+      
     },
     messages: {
       email: {
@@ -77,9 +78,9 @@ window.onload = function () {
       state: {
         required: 'O campo é obrigatório',
       },
-      //complement: {
-      //  required: 'O campo é obrigatório',
-      //},
+      radio: {
+        required: 'O campo é obrigatório',
+      },
       resume: {
         required: 'O campo é obrigatório',
       },
