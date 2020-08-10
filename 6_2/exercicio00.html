@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculo Form</title>
+  <link href="css/bulma.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/exercicio00.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/pikaday.css">
+</head>
+<body>
+  <h1 class="title is-1 has-text-centered">Cadastro de Currículo</h1>
+
+  <form class="curriculum-form" action="" method="GET">
+
+    <div class="field">
+      <label class="label">Nome Completo</label>
+      <div class="control">
+        <input class="input" type="text" id="name" placeholder="Digite seu nome" maxlength="40">
+      </div>    
+    </div>
+
+    <div class="field">
+      <label class="label">E-mail</label>
+      <div class="control">
+        <input class="input" type="text" id="email" placeholder="seuemail@email.com" maxlength="50">
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">CPF</label>
+      <div class="control">
+        <input class="input" id="cpf" type="text" placeholder="000.000.000-00" maxlength="11">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Endereço</label>
+      <div class="control">
+        <input class="input" id="address" type="text" placeholder="Rua Sem Nome, número 000" maxlength="200">
+      </div>
+    </div>
+      
+
+    <div class="field">
+      <div class="control" id="complement">
+        <label class="radio">
+          <input type="radio" id="casa" name="tipo" value="casa" data-validate-field="radio">
+          Casa
+        </label>
+        <label class="radio">
+          <input type="radio" id="apartamento" name="tipo" value="apartamento" data-validate-field="radio">
+          Apartamento
+        </label>
+      </div>
+    </div>
+      
+    <div class="field">
+      <label class="label">Cidade</label>
+      <div class="control">
+      <input class="input" id="city" type="text" placeholder="Digite sua cidade" maxlength="28">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Estado</label>
+      <div class="control">
+        <div class="select">
+          <select id="state"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Resumo do Currículo</label>
+      <div class="control">
+        <textarea class="textarea" id="resume" maxlength="1000"></textarea>
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Cargo</label>
+      <div class="control">
+        <input class="input" id="role" type="text" placeholder="Máximo 40 caracteres" maxlength="40">
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Descrição do Cargo</label>
+      <div class="control">
+        <input class="input" id="roleDescription" type="text" placeholder="Máximo 500 caracteres" maxlength="500">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Data de Início</label>
+      <div class="control">
+        <input class="input" id="datepicker" type="text" placeholder="DD/MM/AAAA" maxlength="10">
+      </div>
+    </div>
+    
+    <div class="field is-grouped is-grouped-right">
+      <p class="control">
+        <button id="enviar" class="button is-primary" name="enviar" type="submit">
+          Enviar
+        </button>
+      </p>
+      <p class="control">
+        <button id="limpar" class="button is-light" name="limpar">
+          Limpar
+        </button>
+      </p>
+    </div>
+  </form>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Developed by <strong><a href="https://github.com/lais-gurgel">Lais Gurgel</a></strong>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/pikaday.js"></script>
+  <script src="js/just-validate.js"></script>
+  <script src="js/exercicio00.js"></script>
+</body>
+</html>
