@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- // Crie uma página que contenha
+  // Um botão ao qual será associado um event listener;
+  // Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+  // Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada. -->
+  
+  <button>Click</button>
+  <p>Contagem de cliques: 0</p>
+
+  <script>
+    const clickButton = document.getElementsByTagName('button')
+  
+    clickButton.addEventListener('click', function () {
+      let clickcount = 0;
+      clickcount =+ 1;
+
+      document.getElementsByTagName('p').textContent = `Contagem de cliques: ${clickcount}`
+    })
+     
+  </script>
+
+</body>
+</html>
