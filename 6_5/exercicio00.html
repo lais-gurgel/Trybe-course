@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@media screen and (max-width: 600px) and (min-width: 400px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+}
+
+/* Faça com que a primeira div desapareça quando a largura da tela for até 600px */
+@media screen and (max-width: 600px) {
+  div.example {
+  	display: none;
+  }
+}
+
+/* Altere o código para que a div amarela fique com a cor "vermelha" quando a largura da página for até 600px; */
+@media screen and (max-width: 600px) {
+  div.example {
+  	font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: red;
+  }
+}
+
+/* Altere o código para que a div amarela fique com a cor "azul" quando a largura da página estiver entre 900px e 1100px; */
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+  div.example {
+  	font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: blue;
+  }
+}
+
+/* Crie uma outra div idêntica a existente e faça com que ela seja mostrada ao lado da div amarela quando a largura da página for maior que 1500px; Dica: use Flexbox*/
+@media screen and (min-width: 1500px) {
+  .flex-container {
+  	display: flex;
+  }
+  div.example2 {
+  	font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+    flex-basis: auto;
+  }
+  div.example {
+  	font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+    flex-basis: auto;
+  }
+}
+/* Faça com que a segunda div desapareça quando a largura da tela estiver entre600px e 900px*/
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example2 {
+  	display: none;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<h2>Change the appearance of DIV on different screen sizes</h2>
+
+<section class="flex-container">
+  <div class="example">Example DIV.</div>
+  <div class="example2">Example2 DIV.</div>
+</section> 
+
+<p>When the browser's width variate, change the appearance of DIV. 
+<strong>Resize the browser window to see the effect</strong>.</p>
+
+</body>
+</html>

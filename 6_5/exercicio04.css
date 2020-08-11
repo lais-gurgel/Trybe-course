@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* SMARTPHONE LAYOUT - DESENVOLVIMENTO MOBILE FIRST*/
+
+body {
+  background: lightskyblue;
+  margin: 15px;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  font-size: 0.9em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+/* TABLET LAYOUT */
+@media only screen and (min-width: 480px) {
+  .navegacao {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* DESKTOP LAYOUT */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1.5em;
+  }
+}
