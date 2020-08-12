@@ -20,7 +20,7 @@ This repository contains all the summaries, exercises and projects developeds by
 - [x] 3-2: *HTML & CSS - Getting Started with CSS*
 - [x] 3-3: *HTML & CSS - Selectors and positioning*
 - [x] 3-4: *Semantic HTML*
-- [x] 3-5: *[Project - HTML & CSS](https://Stefano020.github.io/Projeto-01-Learned-Lessons/)*
+- [x] 3-5: *Project - HTML & CSS
 ##### Block 4: Introduction - JavaScript
 - [x] 4-1: *JavaScript - Getting Started*
 - [x] 4-2: *JavaScript - For Array and Loop*
