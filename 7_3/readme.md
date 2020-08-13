@@ -17,15 +17,21 @@ O sistema tem um tempo de resposta adequado e aceitável, mesmo quando submetido
 - Biblioteca NODEJS ASSERT para criar testes unitários.
 Existem diversas ferramentas para cada linguagem de programação. Focando no JavaScript, utilizaremos o NodeJS Assert Module.
 Métodos que auxiliam nos testes: 
-  assert.equal(actual, expected, [message])
+  assert.equal(actual, expected, [message]) 
+  - operador de comparação ==
   assert.deepStrictEqual(actual, expected, [message])
+  - operador de comparação ===
   assert.notEqual(actual, expected, [message])
+  - compara se dois objetos, ou arrays, não são iguais
   assert.ok(value, [message])
+  - verifica se o valor é true
   assert.fail(actual, expected, message, operator)
+  - lança uma exceção que exibe os valores reais e esperados, separados pelo operador fornecido
 lista de métodos e documentação: https://nelsonic.gitbooks.io/node-js-by-example/content/core/assert/README.html
 
 - Testar 100% dos fluxos de um programa completo com eficácia e rapidez.
 Test Driven Development: TDD
+Inicie o teste observando as regras de negócio
 1. Escreva um teste que falhe
 2. Faça o código funcionar
 3. Elimine redundância

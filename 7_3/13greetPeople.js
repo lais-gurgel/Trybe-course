@@ -1,8 +1,8 @@
 const greetPeople = (people) => {
-  let greeting = 'Hello ';
+  let greeting = [];
 
   for (const person in people) {
-    greeting += people[person];
+    greeting.push(`Hello ${people[person]}`);
   }
   return greeting;
 };
@@ -12,3 +12,8 @@ const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
 
 // Use a variável parameter como parâmetro da função abaixo, escreva testes para verificar se a mesma está retornando como se vê na variável result e, caso não esteja, altere o código para que ele passe nos testes
 
+const assert = require('assert');
+
+assert.deepStrictEqual(typeof greetPeople, 'function');
+assert.deepStrictEqual(greetPeople(parameter), result);
+assert.deepStrictEqual(parameter, ['Irina', 'Ashleigh', 'Elsa']);
