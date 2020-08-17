@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(253 , 251 , 251);
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 15px;
+  border: 0;
+  padding-top: 60px;
+}
+
+#cabecalho {
+  background-color: green;
+  position: fixed;
+  top: 0px;
+  left: 1px;
+  right: 1px;
+  height: 60px;
+  color: whitesmoke;
+  font-size: large;
+  line-height: normal;
+}
+
+#titulo {
+  text-align: center;
+}
+
+#minha_foto {
+  border-radius: 50%;
+}
+
+.licoes {
+  width: 100%;
+}
+
+.conteudo {
+  width: 100%
+}
+
+#licoes-aprendidas {
+  float: left;
+  font-weight: 700;
+  width: 50%;
+}
+
+#licoes-a-aprender {
+  float: right;
+  font-weight: 700;
+  width: 50%;
+}
+
+#rodape {
+  font-weight: 700;
+  clear: both;
+}
+
+#trybe_link_ext {
+  font-weight: 700;
+  color: green;
+}
+
+.conteudo-curso {
+  width: 100%;
+}
+
+.lado-esquerdo {
+  float: left;
+  width: 50%;
+}
+
+.lado-direito {
+  float: right;
+  width: 50%;
+  clear: both;
+}
