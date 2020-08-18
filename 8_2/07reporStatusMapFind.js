@@ -77,7 +77,10 @@ const estudantes = [
 // Buscar um estudante pelo nome e retornar a situação dele em cada matéria:
 const reportStatus = ( name, students) => {
   const student = students.find((student) => (student.nome === name));
-  return student.materias
+  return student.materias.map(
+    materia => (`${materia.name} ${(materia.nota >= 60) ? 'Aprovado' : 'Reprovado'}`
+  ));
 }
+//Primeiro, fizemos um find para buscar e retornar os dados do estudante. O objeto foi retornado e salvo na variável students, depois o map foi usado para percorrer as matérias do objeto retornado e salvar o que se queria em um array da forma desejada.
 
 console.log(reportStatus('Natalia', estudantes));
