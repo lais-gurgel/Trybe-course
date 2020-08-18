@@ -67,8 +67,8 @@ const books = [
 
 function smallerName() {
   let nameBook;
-  let nameLength = 100;
   // escreva aqui o seu código
+  let nameLength = 100;
   const smallestName = (item, index) => {
     if (books[index].name.length < nameLength) {
       nameBook = books[index].name;
