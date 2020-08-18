@@ -1,5 +1,7 @@
 JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
 
+Qual a principal característica de uma High Order Function? Pode receber e/ou retornar uma função como parâmetro.
+
 1- função Array.forEach para iterar sobre todos os elementos de um array;
 ESTRUTURA
   arrayOfValues.forEach((element) => {
@@ -22,5 +24,5 @@ https://developer.cdn.mozilla.net/pt-BR/docs/Web/JavaScript/Reference/Global_Obj
 https://developer.cdn.mozilla.net/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 
 4- função Array.sort para ordenar arrays de acordo com algum critério.
-A função sort permite ordenar um array de acordo com algum critério. Ela ordena sempre por ordem alfabética. E se o array possui algum elemento que não é uma string, a sort a ordena de acordo com a ordem alfabética dos códigos desse elemento na tabela de caracteres.
+A função sort permite ordenar um array de acordo com algum critério. Ordena os valores como string. Ela ordena sempre por ordem alfabética. E se o array possui algum elemento que não é uma string, a sort a ordena de acordo com a ordem alfabética dos códigos desse elemento na tabela de caracteres.
 https://www.w3schools.com/jsref/jsref_sort.asp
