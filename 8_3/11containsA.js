@@ -16,4 +16,7 @@ function containsA() {
   ), 0)
 }
 
+// console.log(names[0].toUpperCase()) // AANEMARIE
+// console.log(names[0].toUpperCase().split('A')) // [ '', '', 'NEM', 'RIE' ]
+
 assert.deepEqual(containsA(), 20);
