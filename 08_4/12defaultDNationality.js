@@ -1,5 +1,6 @@
 // Ajuste a arrow function nationality para que a chamada de nationality(person) retorne João is Brazilian.
-const nationality = ({ firstName, nationality }) => (nationality === undefined ? `${firstName} is Brazilian` : `${firstName} is ${nationality}`)
+// const nationality = ({ firstName, nationality }) => (nationality === undefined ? `${firstName} is Brazilian` : `${firstName} is ${nationality}`)
+const nationality = ({ firstName, nationality = 'Brazilian'}) => `${firstName} is ${nationality}`
 
 const person = {
     firstName: "João",
