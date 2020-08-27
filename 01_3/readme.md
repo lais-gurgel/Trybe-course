@@ -8,8 +8,11 @@ Aprendizados:<br>
 COMANDOS E SIGNIFICADOS<br>
 **ls** lista arquivos e diretórios<br>
 **ls -a** lista todos os arquivos e diretórios
+
 **mkdir** cria um diretório
+
 **cd diretório** muda para o diretório nomeado
+
 **cd** muda para o diretório inicial
 **cd ~** muda para o diretório inicial
 **pwd** muda para o diretório pai
