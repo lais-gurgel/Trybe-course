@@ -6,7 +6,7 @@ Aprendizados:
 3- Executar comandos no terminal para realizar buscas
 
 COMANDOS E SIGNIFICADOS
-**ls** lista arquivos e diretórios
+**ls** lista arquivos e diretórios<br>
 **ls -a** lista todos os arquivos e diretórios
 **mkdir** cria um diretório
 **cd diretório** muda para o diretório nomeado
