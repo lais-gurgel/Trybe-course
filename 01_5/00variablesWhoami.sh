@@ -1,3 +1,4 @@
+#!/bin/bash
 #Imprime uma frase na tela
 echo "Hello World!"
 VARIAVEL="Welcome `whoami`" 
