@@ -1,12 +1,13 @@
 1.4 Unix & Bash - Parte 2
 
-Aprendizados:<br>
-1- Utilizar o comando find;<br>
-2- Utilizar os operadores >, >> e | no terminal;<br>
-3- Alterar as permissões de arquivos e diretórios;<br>
-4- Verificar o status e enviar sinais a processos UNIX;<br>
+Aprendizados:
+* Utilizar o comando find
+* Utilizar os operadores >, >> e | no terminal
+* Alterar as permissões de arquivos e diretórios
+* Verificar o status e enviar sinais a processos UNIX
 
-COMANDOS E SIGNIFICADOS
+Comandos e significados:
+
 **comando > arquivo** redireciona a saída padrão para um arquivo
 **comando >> arquivo** anexa saida padrão a um arquivo
 **comando < arquivo** redireciona a entrada padrão de um arquivo
