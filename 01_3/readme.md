@@ -1,11 +1,11 @@
 1.3 Unix & Bash - Parte 1
 
 Aprendizados:
-1- Executar comandos no terminal para navegas entre os diretórios
-2- Executar comandos no terminal para criar e manipular arquivos e diretórios
-3- Executar comandos no terminal para realizar buscas
+1- Executar comandos no terminal para navegas entre os diretórios<br>
+2- Executar comandos no terminal para criar e manipular arquivos e diretórios<br>
+3- Executar comandos no terminal para realizar buscas<br>
 
-COMANDOS E SIGNIFICADOS
+COMANDOS E SIGNIFICADOS<br>
 **ls** lista arquivos e diretórios<br>
 **ls -a** lista todos os arquivos e diretórios
 **mkdir** cria um diretório
