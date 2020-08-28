@@ -48,7 +48,6 @@ const fetchCurrency = (currency) => {
   fetch(endpoint)
     .then((response) => response.json())
     .then((object) => {
-      console.log(object);
       if (object.error) {
         throw new Error(object.error);
       } else {
@@ -66,9 +65,15 @@ const handleRates = (rates) => {
   const ratesKeys = Object.keys(rates).sort();
   
   ratesKeys.forEach((key) => {
-    const value = rates[key];
+    let value = rates[key];
+    value = multiplyCurrency(value);
     renderRate(key, value);
   })
+}
+
+const multiplyCurrency = (value) => {
+  const currencyQuantity = document.querySelector('#currency-quantity').value;
+  return value = value * currencyQuantity;
 }
 
 const renderRate = (key, value) => {
