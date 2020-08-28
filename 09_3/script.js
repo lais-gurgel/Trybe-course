@@ -82,6 +82,9 @@ const renderRate = (key, value) => {
 }
 
 // Adicione um botão "limpar" que, ao ser clicado, apaga a listagem de moedas.
+const clearButton = document.querySelector('#clear-button');
+clearButton.addEventListener('click', clearList);
+
 // Ordene a lista de moedas por ordem alfabética.
 // Adicione um input do tipo number que permite que a pessoa usuária digite um valor para ser multiplicado pelos valores das moedas.
 // Adicione um novo input de texto, com a label "Filtrar", que permite filtrar a listagem pela moeda digitada
