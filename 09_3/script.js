@@ -63,7 +63,7 @@ const handleError = (errorMessage) => {
 }
 
 const handleRates = (rates) => {
-  const ratesKeys = Object.keys(rates);
+  const ratesKeys = Object.keys(rates).sort();
   
   ratesKeys.forEach((key) => {
     const value = rates[key];
@@ -86,6 +86,9 @@ const clearButton = document.querySelector('#clear-button');
 clearButton.addEventListener('click', clearList);
 
 // Ordene a lista de moedas por ordem alfabética.
+
 // Adicione um input do tipo number que permite que a pessoa usuária digite um valor para ser multiplicado pelos valores das moedas.
+
 // Adicione um novo input de texto, com a label "Filtrar", que permite filtrar a listagem pela moeda digitada
+
 // BONUS: Inclua a opção para a pessoa usuária pesquisar pela moeda BTC, que corresponde ao Bitcoin.
