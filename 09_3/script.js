@@ -43,7 +43,21 @@ const clearList = () => {
 }
 
 const fetchCurrency = (currency) => {
-  const endpoint = `${url}?base=${currency}`;
+  const currencyFilterInputValue = document.querySelector('#currency-filter').value;
+  const currencyValue = document.querySelector('#currency-input').value;
+  
+  let endpoint = `${url}?base=${currency}`;
+  if(currencyFilterInputValue.length > 0) {
+    endpoint = `${endpoint}&symbols=${currencyFilterInputValue}`
+  }
+
+  if(currencyValue === 'BTC') {
+    endpoint = `https://api.coindesk.com/v1/bpi/currentprice.json`
+    fetch(endpoint)
+    .then((response) => response.json())
+    .then((object) => handleRates(object.bpi))
+    //.catch((error) => handleError(error))
+  }
 
   fetch(endpoint)
     .then((response) => response.json())
@@ -86,9 +100,10 @@ const renderRate = (key, value) => {
   currencyList.appendChild(li);
 }
 
-// Adicione um botão "limpar" que, ao ser clicado, apaga a listagem de moedas.
 const clearButton = document.querySelector('#clear-button');
 clearButton.addEventListener('click', clearList);
+
+// Adicione um botão "limpar" que, ao ser clicado, apaga a listagem de moedas.
 
 // Ordene a lista de moedas por ordem alfabética.
 
