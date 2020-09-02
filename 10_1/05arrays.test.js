@@ -14,10 +14,12 @@ test('the flavor list contains lime', () => {
 
 // toContainEqual
 // Use .toContainEqual quando você deseja verificar que um item com uma estrutura específica e valores está contido em um array. Para testar os itens no array, este "matcher" recursivamente verifica a igualdade de todos os campos, em vez de verificar a identidade do objeto.
+function 
+
 describe('my beverage', () => {
   test('is delicious and not sour', () => {
     const myBeverage = {delicious: true, sour: false};
-    // expect(myBeverages()).toContainEqual(myBeverage);
+    expect(myBeverages()).toContainEqual(myBeverage);
   });
 });
 
