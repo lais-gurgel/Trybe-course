@@ -4,7 +4,7 @@ function randomRgbColor() {
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r}, ${g}, ${b})`;
 }
-
+ 
 test("#randomRgbColor", () => {
   // testando quantas vezes a função foi chamada e qual seu retorno
   service.randomRgbColor = jest
