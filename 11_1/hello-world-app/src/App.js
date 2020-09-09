@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import HelloWord from './Component.js'
 
 function App() {
-  return (<span>Hello World!</span>)
+  return <HelloWord />
 }
 
 export default App;
