@@ -7,18 +7,20 @@ import Pokemon from './Pokemon'
 class Pokedex extends React.Component {
   render() {
     return (
-      <div>
-        <h1>POKEDEX</h1>
+      <div className='container'>
+        <h1 className='title'>POKEDEX</h1>
+        <div className='pokedex'>
         {pokemons.map((pokemon) =>{
           return <Pokemon 
           key={pokemon.id}
           name={pokemon.name}
           type={pokemon.type}
-          averageWeightValue={pokemon.averageWeight.value}
-          averageWeightMeasurementUnit={pokemon.averageWeight.measurementUnit}
+          weightValue={pokemon.averageWeight.value}
+          weightUnit={pokemon.averageWeight.measurementUnit}
           image={pokemon.image}
           />
         })}
+        </div>
       </div>
     )
   }

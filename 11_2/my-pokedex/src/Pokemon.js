@@ -4,14 +4,16 @@ import PropTypes from 'prop-types'
 
 class Pokemon extends React.Component {
   render() {
-    const { name, type, averageWeightValue, averageWeightMeasurementUnit, image } = this.props
+    const { name, type, weightValue, weightUnit, image } = this.props
 
     return (
       <div className='pokemon-card'>
-        <h2>{name}</h2>
-        <p>{type}</p>
-        <p>Average weight: {averageWeightValue} {averageWeightMeasurementUnit}</p>
-        <img src={image} alt={name}/>
+        <div className='pokemon-info'>
+          <h3>{name}</h3>
+          <p>{type}</p>
+          <p>Average weight: {weightValue} {weightUnit}</p>
+        </div>
+        <img className='pokemon-image' src={image} alt={name}/>
       </div>
     )
   }
