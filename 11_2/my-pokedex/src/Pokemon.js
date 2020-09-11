@@ -8,12 +8,12 @@ class Pokemon extends React.Component {
 
     return (
       <div className='pokemon-card'>
+        <img className='pokemon-image' src={image} alt={name}/>
         <div className='pokemon-info'>
           <h3>{name}</h3>
           <p>{type}</p>
           <p>Average weight: {weightValue} {weightUnit}</p>
         </div>
-        <img className='pokemon-image' src={image} alt={name}/>
       </div>
     )
   }

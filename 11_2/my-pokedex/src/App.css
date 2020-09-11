@@ -9,19 +9,19 @@ body {
 .pokedex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-  align-items: stretch;
 }
 
 .pokemon-card {
-  border: 1px solid black;
-  border-radius: 5px;
-  display: flex;
-  margin: 10px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid black;
+  border-radius: 5px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
   transition: 0.3s;
+  width: 300px;
 }
 
 .pokemon-card:hover {
