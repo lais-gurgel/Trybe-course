@@ -8,7 +8,7 @@ class App extends React.Component {
     this.state = {
       counter: 0,
     }
-      console.log("construtor");
+    console.log("construtor");
   }
   
   componentDidMount() {
@@ -20,7 +20,7 @@ class App extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     console.log(this.state)
     console.log('shouldComponentUpdate')
-    if(this.state.counter === 12) {
+    if(this.state.counter === 13 || this.state.counter === 14 || this.state.counter === 15) {
       return false;
     }
     return true;
