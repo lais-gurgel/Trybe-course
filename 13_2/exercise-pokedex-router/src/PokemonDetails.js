@@ -2,9 +2,10 @@ import React from 'react';
 
 class PokemonDetails extends React.Component {
   render() {
+    let { pokemondId } = this.props.match.params;
     return(
       <div>
-        <h2>POKEMON Details</h2>
+        <h2>POKEMON Details {`${pokemondId}`}</h2>
         <p>INSERIR CARD</p>
 
         <h2>Summary</h2>
