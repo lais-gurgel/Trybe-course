@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  width: 300px;
+}
