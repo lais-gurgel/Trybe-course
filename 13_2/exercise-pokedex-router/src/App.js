@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Switch>
-          <Route path='/pokemons' component={PokemonDetails} />
+          <Route path='/pokemons/:pokemonId' component={PokemonDetails} />
           <Route path='/favorites' component={Favorites} />
           <Route path='/about' component={About} />
           <Route exact path='/'><Pokedex pokemons={pokemons} /></Route>

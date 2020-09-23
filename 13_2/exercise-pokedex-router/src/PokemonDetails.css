@@ -1,0 +1,8 @@
+.locations {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-locations {
+  margin: 10px;
+}

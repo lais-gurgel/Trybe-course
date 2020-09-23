@@ -1,17 +1,26 @@
 import React from 'react';
+import Pokemon from './Pokemon.js';
+import pokemons from './data.js';
+import './PokemonDetails.css';
 
 class PokemonDetails extends React.Component {
   render() {
-    let { pokemondId } = this.props.match.params;
+    const { pokemonId } = this.props.match.params;
+    const pokemon = pokemons.find(pokemon => pokemon.id === parseInt(pokemonId));
+    console.log(pokemon)
     return(
       <div>
-        <h2>POKEMON Details {`${pokemondId}`}</h2>
-        <p>INSERIR CARD</p>
-
+        <h2>{pokemon.name} Details</h2>
+        <Pokemon pokemon={pokemon} />
         <h2>Summary</h2>
-
-        <h2>Game Locations of POKEMON</h2>
-
+        <p>{pokemon.summary}</p>
+        <h2>Game Locations of {pokemon.name}</h2>
+        <div className='locations'>
+        {pokemon.foundAt.map((eachLocation, index) => <div className='pokemon-locations' key={index}>
+          <img src={eachLocation.map} alt='mapa' />
+          <p>{eachLocation.location}</p>
+        </div>)}
+        </div>
         <label>Favorite pokemon?
           <input type='checkbox'/>
         </label>
