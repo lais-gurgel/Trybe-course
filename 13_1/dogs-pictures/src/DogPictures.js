@@ -21,7 +21,7 @@ class DogPictures extends React.Component {
         const requestReturn = await fetch('https://dog.ceo/api/breeds/image/random')
         const requestObject = await requestReturn.json()
         this.setState({
-         picture: requestObject,
+         picture: requestObject.message,
          loading: false
         })
       }
@@ -39,13 +39,13 @@ class DogPictures extends React.Component {
 
   savePicture() {
     this.setState(({ storedPictures, picture}) => ({
-      storedPictures: [...storedPictures, picture.message]
+      storedPictures: [...storedPictures, picture]
     }))
     this.fetchPicture();
   }
 
   renderPictureElement() {
-    const imageURL = this.state.picture.message;
+    const imageURL = this.state.picture;
     localStorage.setItem('image', `${imageURL}`)
     return (<div className='last-dog'>
       <h2>{imageURL.split('/')[4]}</h2>
