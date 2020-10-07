@@ -1,5 +1,5 @@
 import React from 'react';
-import pikachu from './images/pikachu.gif'
+import pikachu from './images/pikachu.gif';
 
 class NotFound extends React.Component {
   render() {

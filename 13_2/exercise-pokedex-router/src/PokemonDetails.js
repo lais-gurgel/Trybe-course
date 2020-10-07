@@ -7,11 +7,10 @@ class PokemonDetails extends React.Component {
   render() {
     const { pokemonId } = this.props.match.params;
     const pokemon = pokemons.find(pokemon => pokemon.id === parseInt(pokemonId));
-    console.log(pokemon)
     return(
-      <div>
+      <div className='pokemon-details'>
         <h2>{pokemon.name} Details</h2>
-        <Pokemon pokemon={pokemon} />
+        <Pokemon pokemon={pokemon} link='false' />
         <h2>Summary</h2>
         <p>{pokemon.summary}</p>
         <h2>Game Locations of {pokemon.name}</h2>
