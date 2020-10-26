@@ -5,6 +5,17 @@ class Login extends React.Component {
     return (
       <div>
         Login
+        <form>
+        <label>
+          e-mail:
+          <input type="text" name="name" />
+        </label>
+        <label>
+          password:
+          <input type="text" name="name" />
+        </label>
+        <input type="submit" value="Enviar" />
+      </form>
       </div>
     );
   }
