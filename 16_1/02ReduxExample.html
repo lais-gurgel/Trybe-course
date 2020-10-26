@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redux basic example</title>
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+</head>
+<body>
+  <div>
+    Clicked: <span id="value">0</span> times
+    <button id="increment">+</button>
+    <button id="decrement">-</button>
+    <button id="multi">Incrementa 10</button>
+    <section>
+      <input type="number" id="increment-input">
+      <input type="number" id="decrement-input">
+    </section>
+  </div>
+  <script>
+    // Actions
+    const INCREMENT = 'INCREMENT'
+    const DECREMENT = 'DECREMENT'
+    const INCREMENT_CLICK = 'INCREMENT_CLICK'
+
+    // Reducer (Counter)
+    function counterReducer(state = { clickCount: 0, value: 0 }, action) {
+      switch (action.type) {
+        case INCREMENT:
+          return { ...state, value: state.value + action.value };
+        case DECREMENT:
+          return { ...state, value: state.value - action.value };
+        case INCREMENT_CLICK:
+          return { ...state, clickCount: state.clickCount + 1 };
+        default:
+          return state;
+      }
+    }
+
+    // Store
+    const store = Redux.createStore(counterReducer)
+
+    document.getElementById('increment-input').addEventListener('change', (ev) => {
+      store.dispatch({ type: INCREMENT, value: parseInt(ev.target.value) })
+    });
+
+    document.getElementById('decrement-input').addEventListener('change', (ev) => {
+      store.dispatch({ type: DECREMENT, value: parseInt(ev.target.value) })
+    });
+
+    document.getElementById('increment').addEventListener('click', () => {
+      store.dispatch({ type: INCREMENT, value: 1 })
+      store.dispatch({ type: INCREMENT_CLICK })
+    });
+
+    document.getElementById('decrement').addEventListener('click', () => {
+      store.dispatch({ type: DECREMENT, value: 1 })
+      store.dispatch({ type: INCREMENT_CLICK })
+    });
+
+    document.getElementById('multi').addEventListener('click', () => {
+      store.dispatch({ type: INCREMENT, value: 10 })
+      store.dispatch({ type: INCREMENT_CLICK })
+    });
+
+    // toda vez que acontecer um dispatch, será executado o subscribe
+    store.subscribe(() => document.getElementById('value').innerHTML = store.getState().clickCount.toString());
+  </script>
+</body>
+</html>
