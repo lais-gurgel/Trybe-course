@@ -1,1 +1,1 @@
-export const addAssignment = (value) => ({ type: 'ADD_ELEMENT', value });
+export const addAssignment = (name, value) => ({ type: 'ADD_ELEMENT', name, value });

@@ -1,22 +1,14 @@
-const INITIAL_STATE = {};
+const INITIAL_STATE = {
+  name: '',
+};
 
-function listReducer(state = INITIAL_STATE, action) {
+function formReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'ADD_ELEMENT':
-      return [...state, action.value];
+      return {...state, [action.name]: action.value};
     default:
       return state;
   }
 }
 
-handleChange({ target }) {
-  const { name } = target
-  const value = target.type === 'checkbox' ? target.checked : target.value
-
-  this.setState({
-    [name]: value,
-  })
-}
-
-
-export default listReducer;
+export default formReducer;
