@@ -6,6 +6,7 @@ class Home extends React.Component {
     return (
       <div>
         Home
+        <br/>
         <Link to="/login">Login</Link>
       </div>
     );
