@@ -1,18 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux';
 import { addAssignment } from './actions';
 
 const states = ['Selecione seu estado', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO']
 
-class Form extends Component {
-  constructor() {
-    super()
-
-    this.handleChange = this.handleChange.bind(this)
+class Form extends React.Component {
+  constructor(props) {
+    super();
+    
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
       name: '',
-    }
+    };
+  }
+
+  handleSubmit() {
+    const { add } = this.props;
+    add(this.state);
   }
 
   handleChange({ target }) {
@@ -25,10 +31,8 @@ class Form extends Component {
   }
 
   render () {
-    const { add } = this.props;
-    console.log(this.state);
     return (
-      <form onClick={() => add(this.state)}>
+      <form>
         <h1>Resume Application Form</h1>
         <fieldset>
           <label>Name: </label>
@@ -78,7 +82,7 @@ class Form extends Component {
           <textarea name="job-position" value={this.state.value} onChange={this.handleChange} maxLength="500" required={false} />
         </fieldset>
         
-        <button type="submit">SUBMIT</button> 
+        <button type="button" onClick={this.handleSubmit}>SUBMIT</button> 
       </form>
     );
   }
