@@ -1,1 +1,1 @@
-export const addAssignment = (name, value) => ({ type: 'ADD_ELEMENT', name, value });
+export const addAssignment = (formData) => ({ type: 'ADD_ELEMENT', formData });
