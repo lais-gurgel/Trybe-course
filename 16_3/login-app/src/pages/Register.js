@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { loginUser } from '../actions';
+import { registerUser } from '../actions';
 
 class Register extends React.Component {
   constructor() {
@@ -23,7 +23,7 @@ class Register extends React.Component {
     const { users } = this.props;
     return (
       <div>
-        Register
+        REGISTER
         <form>
           <label>
             name:
@@ -45,7 +45,7 @@ class Register extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  users: (user) => dispatch(loginUser(user))
+  users: (user) => dispatch(registerUser(user))
 });
 
 export default connect(null, mapDispatchToProps)(Register);

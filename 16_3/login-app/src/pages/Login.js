@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { loginUser} from '../actions';
+import { loginUser } from '../actions';
 
 class Login extends React.Component {
   constructor() {
@@ -22,7 +22,7 @@ class Login extends React.Component {
     const { email, password } = this.state;
     return (
       <div>
-        Login
+        LOGIN
         <form>
           <label>
             e-mail:

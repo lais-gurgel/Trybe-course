@@ -7,9 +7,12 @@ class Users extends React.Component {
     const { users } = this.props;
     return (
       <div>
-        Users
+        USERS
         <br/>
-        {!users ? 'Nenhum cliente cadastrado' : users.user}
+        <ol>
+        {!users ? 'Nenhum cliente cadastrado' : users.map((user) => 
+        <li>Name:{user.name} Age:{user.age} Email:{user.email}</li>)}
+        </ol>
         <br/>
         <button onClick={() => {}}><Link to="/register">Register now</Link></button>
       </div>

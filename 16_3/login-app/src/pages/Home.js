@@ -5,7 +5,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        Home
+        HOME
         <br/>
         <Link to="/login">Login</Link>
       </div>

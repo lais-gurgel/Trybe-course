@@ -28,7 +28,7 @@ class Form extends Component {
     const { add } = this.props;
     console.log(this.state);
     return (
-      <form>
+      <form onClick={() => add(this.state)}>
         <h1>Resume Application Form</h1>
         <fieldset>
           <label>Name: </label>
@@ -78,7 +78,7 @@ class Form extends Component {
           <textarea name="job-position" value={this.state.value} onChange={this.handleChange} maxLength="500" required={false} />
         </fieldset>
         
-        <button type="button" onClick={() => add(this.state)}>SUBMIT</button> 
+        <button type="submit">SUBMIT</button> 
       </form>
     );
   }

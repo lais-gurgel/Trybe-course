@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
   userLogin: {},
-  usersData: {user:'Lais'},
+  usersData: [],
 };
 
 function loginReducer(state = INITIAL_STATE, action) {
@@ -8,7 +8,7 @@ function loginReducer(state = INITIAL_STATE, action) {
     case 'LOGIN':
       return { ...state, userLogin: action.user };
     case 'ADD_USER':
-      return { ...state, usersData: action.user };
+      return { ...state, usersData: state.usersData.concat(action.user) };
     default:
       return state;
   }
