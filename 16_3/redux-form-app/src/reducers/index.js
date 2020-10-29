@@ -1,11 +1,9 @@
-const INITIAL_STATE = {
-  formData: {},
-};
+const INITIAL_STATE = {};
 
 function formReducer(state = INITIAL_STATE, { type, formData}) {
   switch (type) {
     case 'ADD_ELEMENT':
-      return {...state, formData };
+      return {...state, ...formData };
     default:
       return state;
   }
