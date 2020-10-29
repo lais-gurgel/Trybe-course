@@ -27,17 +27,15 @@ class SearchForm extends React.Component {
     const { inputText } = this.state;
 
     //desestruture a ação do thunk como propriedade aqui
-
+    const { fetchCharacter } = this.props;
+    
     this.setState({
       inputText: '',
       characterSearched: inputText,
       }, () => {
-      { 
-        characterSearched = this.state;
-        fetchCharacter(characterSearched);
-      }
-      }
-    )
+      const { characterSearched } = this.state;
+      fetchCharacter(characterSearched);
+    })
     // insira a action a ser despachada para o thunk
   }
 

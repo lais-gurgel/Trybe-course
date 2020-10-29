@@ -10,7 +10,7 @@ export const fail = (error) => ({
   error
 });
 
-exṕort const fetchCharacter = (name) => {
+export const fetchCharacter = (name) => {
   return (dispatch) => {
     fetchChar(name)
       .then((characterSearch) => dispatch(success(characterSearch)))
