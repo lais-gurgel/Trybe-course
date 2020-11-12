@@ -3,11 +3,8 @@ import Daughter from './Daughter';
 function Father(props) {
   return (
     <div>
-      <h1>Eu sou o pai</h1>
-      <Daughter
-        inheritance={props.inheritance}
-        spendInheritance={props.spendInheritance}
-      />
+      <h1>I am the father</h1>
+      <Daughter />
     </div>
   );
 }

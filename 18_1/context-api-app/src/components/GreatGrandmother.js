@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Grandmother from './Grandmother';
+import MyContext from './MyContext';
 
 class GreatGrandmother extends Component {
   constructor(props) {
@@ -17,14 +18,17 @@ class GreatGrandmother extends Component {
   }
 
   render() {
+    const contextValue = {
+      money: this.state.inheritance,
+      spendMoney: this.spendInheritance,
+    }
     return (
-      <div>
-        <h1>Eu sou a bisavó</h1>
-        <Grandmother
-        inheritance={this.state.inheritance}
-        spendInheritance={this.spendInheritance}
-       />
-      </div>
+      <MyContext.Provider value={contextValue}>
+        <div>
+          <h1>I am the great grandmother</h1>
+          <Grandmother />
+        </div>
+      </MyContext.Provider>
     );
   }
 }
