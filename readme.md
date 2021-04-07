@@ -1,13 +1,13 @@
-# Trybe
+# Trybe Course
 
-This repository contains all the summaries, exercises and projects developeds by *[Lais Gurgel](https://lais-gurgel.github.io/)* while studying at [Trybe](https://www.betrybe.com/) :rocket:
+This repository contains all the summaries, exercises and projects developeds by me, *[Lais Gurgel](https://lais-gurgel.github.io/)*, while studying at [Trybe](https://www.betrybe.com/) :rocket:
 
 *The program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.*
 
 ### [Get in touch!](https://www.linkedin.com/in/lais-gurgel/)
 <!-- :white_check_mark: -->
 
-## FUNDAMENTALS OF WEB DEVELOPMENT
+### FUNDAMENTALS OF WEB DEVELOPMENT
 ##### Block 1: Unix, Bash and Shell Script
 *  1-3: *Unix & Bash - Part 1*
 *  1-4: *Unix & Bash - Part 2*
@@ -68,7 +68,7 @@ This repository contains all the summaries, exercises and projects developeds by
 *  10-3: *Jest - Simulating behaviors*
 *  10-4: *Project - Asynchronous Jest and Mocking*
 
-## FRONT-END DEVELOPMENT
+### FRONT-END DEVELOPMENT
 ##### Block 11: REACT Introduction
 *  11-1: *'Hello, world!' in React!*
 *  11-2: *React Components*
@@ -106,7 +106,7 @@ This repository contains all the summaries, exercises and projects developeds by
 ##### Block 19: Final Front-end Project
 *  19-1: *Project - Recipe App*
 
-## BACK-END DEVELOPMENT
+### BACK-END DEVELOPMENT
 ##### Block 20: Introduction - Relational Databases - SQL
 *  20-1: *SQL database*
 *  20-2: *Finding data in a database*
@@ -165,7 +165,7 @@ This repository contains all the summaries, exercises and projects developeds by
 *  31-3: *ORM - Associations*
 *  31-4: *Good practice in writing tests*
 *  31-5: *Project - Blogs API*
-##### Block 35: Sockets
+##### Block 32: Sockets
 *  32-1: *Architecture - View Layer*
 *  32-1: *Sockets - TCP/UDP & NET*
 *  32-2: *Sockets - Socket.io*
@@ -173,7 +173,7 @@ This repository contains all the summaries, exercises and projects developeds by
 ##### Block 33: Project
 *  33-1: *Project - Trybeer II*
 
-## COMPUTER SCIENCE
+### COMPUTER SCIENCE
 ##### Block 34: Computer and Network Architecture
 *  34-1: *Computer Architecture*
 *  34-2: *Network Architecture*
