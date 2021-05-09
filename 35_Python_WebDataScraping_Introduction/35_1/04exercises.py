@@ -44,6 +44,7 @@ def draw_square(n):
         print()
 
 
+draw_square(5)
 # Exercício 4: Crie uma função que receba uma lista de nomes e retorne o nome com a maior quantidade de caracteres. Por exemplo, para ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"] , o retorno deve ser "Fernanda" .
 # 🦜 Uma dica: Utilize a função len() para verificar o tamanho do nome.
 names = ["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]
@@ -79,3 +80,25 @@ print(paint_cost(55))
 # Triângulo Equilátero: três lados iguais;
 # Triângulo Isósceles: quaisquer dois lados iguais;
 # Triângulo Escaleno: três lados diferentes.
+
+
+def discover_triangle_type(sideA, sideB, sideC):
+        is_triangle = (
+            sideA + sideB > sideC and
+            sideB + sideC > sideA and
+            sideA + sideC > sideB
+        )
+        if not is_triangle:
+            return 'Não é um triângulo'
+        elif sideA == sideB == sideC:
+            return 'Triângulo Equilátero: três lados iguais'
+        elif sideA != sideB != sideC:
+            return 'Triângulo Escaleno: três lados diferentes'
+        else:
+            return 'Triângulo Isósceles: quaisquer dois lados iguais'
+
+
+print(discover_triangle_type(1, 2, 3))
+print(discover_triangle_type(16, 20, 30))
+print(discover_triangle_type(6, 6, 8))
+print(discover_triangle_type(1, 1, 1))
