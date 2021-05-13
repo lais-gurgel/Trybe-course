@@ -26,6 +26,13 @@ from http.client import HTTP_PORT  # importa a constante HTTP_POST do módulo cl
 
 ### Ambiente virtual
 Cada ambiente virtual possui seu próprio binário Python (que corresponde à versão do binário usado para criar esse ambiente) e pode ter seu próprio conjunto independente de pacotes Python instalados nos diretórios do site. O módulo [venv](https://docs.python.org/pt-br/dev/library/venv.html#module-venv) fornece suporte para a criação desses “ambientes virtuais”.
+~~~
+python3 -m venv .venv  # criação do ambiente com o nome .venv
+
+source .venv/bin/activate  # ativação do ambiente para uso
+
+deactivate # desativação
+~~~
 
 [Python - site oficial](https://www.python.org/)
 
