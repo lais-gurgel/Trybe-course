@@ -3,6 +3,7 @@
 # Verifique casos como entrada maior que 30 caracteres, vazia e com caracteres inválidos.
 
 import pytest
+import re
 from translate_to_number import translate_to_number
 
 
@@ -14,7 +15,12 @@ def test_translate_to_number_with_phrase():
 
 def test_translate_to_number_with_empty_params():
     "Para uma entrada vazia retorna um erro"
-    with pytest.raises(TypeError):
+    with pytest.raises(
+        TypeError,
+        match=re.escape(
+            "translate_to_number() missing 1 required positional argument: 'expression'"
+        ),
+    ):
         translate_to_number()
 
 
@@ -22,9 +28,6 @@ def test_translate_to_number_with_invalid_character():
     "Para uma entrada com caracteres errados retorna um erro"
     with pytest.raises(ValueError, match="Expression with invalid length"):
         translate_to_number("#")
-
-
-# , match="translate_to_number() missing 1 required positional argument: 'expression'"
 
 
 def test_abc_should_be_converted_in_2():
@@ -69,12 +72,7 @@ def test_expression_should_be_at_least_one_char():
 
 
 def test_expression_maximum_are_thirty_chars():
-    long_expression = (
-        "1111111111"  # 10 chars
-        "1111111111"
-        "1111111111"
-        "1"
-    )
+    long_expression = "1111111111" "1111111111" "1111111111" "1"  # 10 chars
     with pytest.raises(ValueError):
         translate_to_number(long_expression)
 
